@@ -1,0 +1,51 @@
+.mainTitle {
+    font-size: 60px;
+    color: #ed7611;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.selectTitle {
+    margin: 20px 0px;
+}
+
+.items {
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+
+.item {
+    border: 5px solid #bbb;
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    background-size: cover !important;
+}
+
+.item:nth-child(1) {
+    background: url("/web1.jpg")
+}
+
+.item:nth-child(2) {
+    background: url("/35625.jpg")
+}
+
+.title {
+    position:static;
+    right: 10px;
+    bottom: 10px;
+    /* font: 40px; */
+    font-size: calc(0.8rem + .5vw);
+    font-weight: bold;
+    color: #ed7611;
+}
+
+.item:hover .title {
+    color: #555555
+}
