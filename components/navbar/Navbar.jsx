@@ -21,16 +21,11 @@ const links = [
     },
     {
         id: 3,
-        title: "Blog",
-        url: "/blog",
-    },
-    {
-        id: 4,
         title: "About",
         url: "/about",
     },
     {
-        id: 5,
+        id: 4,
         title: "Contact",
         url: "/contact",
     },    
@@ -84,9 +79,6 @@ const Navbar = () => {
           </li>
           <li className='p-4'>
             <Link href='/portfolio'>Portfolio</Link>
-          </li>
-          <li className='p-4'>
-            <Link href='/blog'>Blog</Link>
           </li>
           <li className='p-4'>
             <Link href='/about'>About</Link>
