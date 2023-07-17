@@ -9,16 +9,14 @@ export const GET = async (req, res) => {
     const username = url.searchParams.get("username");
 
     try {
-        await connect(
-            url.searchParams.get("username")
-        );
+        await connect();
 
         const posts = await Post.find(username && { username });
-        return new NextResponse.json(JSON.stringify(posts), {status: 200});
+        return new NextResponse(JSON.stringify(posts), {status: 200});
 
     } catch(error) {
 
-        return new NextResponse.json("Database Error", {status: 500});
+        return new NextResponse("Database Error", {status: 500});
     }
 
 }
